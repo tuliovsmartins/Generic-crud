@@ -7,8 +7,6 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
-
-import xyinc.Entity.Client;
 import xyinc.Entity.Product;
 
 @Repository
