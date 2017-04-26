@@ -12,14 +12,14 @@ Simple generic aplication to create dinamic models
 
 # Para clonar o projeto:
 
-~#: mkdir xy-inc
-~#: cd xy-inc
-~#: git clone https://github.com/tuliovsmartins/xy-inc.git
-~#: cd xy-inc
+~#: mkdir xy-inc 
+~#: cd xy-inc  
+~#: git clone https://github.com/tuliovsmartins/xy-inc.git  
+~#: cd xy-inc  
 
 # Executando a aplicação:
 
-~#: mvn spring-boot:run
+~#: mvn spring-boot:run  
 
 Após a inicialização `http://localhost:8080/create/model` ou pelo comando ~#: `curl http://localhost:8080/create/model`
 
