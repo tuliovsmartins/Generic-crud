@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="box">
+	<div class="dropdown">
+	  <button class="dropbtn">Cliente</button>
+	  <div class="dropdown-content">
+	    <a href="/client/createClient">Cadastrar Cliente</a>
+	    <a href="/client/retrieveClient">Consultar Clientes</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Produtos</button>
+	  <div class="dropdown-content">
+	    <a href="/product/createProduct">Cadastrar Produtos</a>
+	    <a href="/product/retrieveProduct">Visualizar Produtos</a>
+	  </div>
+	</div>
+	<div class="form">
+		<form th:method="PUT" th:object="${ClientDataVM}">
+			<div class="alert-success" th:text="${message}" th:if="${not #strings.isEmpty(message)}">
+			</div>
+			<input type="text" th:value="${client.name}" name="name" placeholder="Nome do cliente"/>
+			<input type="text" th:value="${client.document}" name="document" placeholder="Documento do cliente"/>
+			<input type="submit" name="submit" value="Editar"/>
+		</form>
+	</div>
+</div>
+</body>
+</html>

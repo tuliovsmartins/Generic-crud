@@ -12,14 +12,14 @@ Simple generic aplication to create dinamic models
 
 # Para clonar o projeto:
 
-~#: mkdir xy-inc
-~#: cd xy-inc
-~#: git clone https://github.com/tuliovsmartins/xy-inc.git
-~#: cd xy-inc
+~#: mkdir xy-inc 
+~#: cd xy-inc  
+~#: git clone https://github.com/tuliovsmartins/xy-inc.git  
+~#: cd xy-inc  
 
 # Executando a aplicação:
 
-~#: mvn spring-boot:run
+~#: mvn spring-boot:run  
 
 Após a inicialização `http://localhost:8080/create/model` ou pelo comando ~#: `curl http://localhost:8080/create/model`
 
@@ -90,3 +90,7 @@ Enviar uma requisição do tipo GET com o nome do modelo
 Enviar uma requisição do tipo GET com o nome do modelo seguido do id que deseja visualizar o ítem
 
 `http://localhost:8080/create/model/clients/78901234`
+
+
+*É necessário ter o gerenciador de dependencias Maven instalado.*
+*No linux é possível instalar maven via repositório: apt-get ou Yum*
