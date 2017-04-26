@@ -46,6 +46,7 @@ name - do tipo String
 document: do tipo String  
 dateCreate: do tipo Date  
 birthDate: do tipo Date
+PostalCode: do tipo String
 _id: do tipo long
 
 Após a criação de um modelo, podemos ter uma lista de modelos criados acessando o endereço: 
